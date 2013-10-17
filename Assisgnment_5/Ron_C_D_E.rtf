@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 C.\
+SHIPMENT_DATA (\ul ShipmentNumber\ulnone , 
+\i Shipper
+\i0 , From, Departure, Arrival, Contents, InsuredValue)\
+SHIPPER_DATA (\ul Shipper\ulnone , Phone, Contact)\
+ITEM_DATA (\ul ItemNumber\ulnone , Item)\
+SALESPERSON_DATA (\ul Salesperson\ulnone , City, Store)\
+PRICE_DATA (
+\i \ul Item
+\i0 \ulnone , 
+\i Salesperson
+\i0 , Date, Price)\
+CONTENTS_DATA (
+\i \ul ShipmentNumber
+\i0 \ulnone , 
+\i Item
+\i0 )\
+\
+\
+D.\
+Use your answer, it makes mine look foolish!\
+\
+\
+\
+\
+E. \
+A change that would express the relationship between shipment and item would be to use the actual city in both the \'91City\'92 column for item and the \'91From\'92 column for the shipment. Currently in the \'91City\'92 column it has things such as Singapore listed, which is a country not city, yet also has Manila listed which IS a city. So, you have an issue there. Also, in the \'91From\'92 column you will see that Singapore is actually misspelt as Singaporeee, which is a problem. I would use a drop down box for the \'91From\'92 and \'91City\'92 columns that has entries based on where there are store locations. This change would eliminate inconsistencies in spelling and using countries instead of cities. }
