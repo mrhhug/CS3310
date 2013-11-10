@@ -1,0 +1,10 @@
+C:\Users\User_2\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\bin\ShoppingCartV2.dll
+C:\Users\User_2\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\bin\ShoppingCartV2.pdb
+C:\Users\User_2\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User_2\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\obj\Debug\ShoppingCartV2.dll
+C:\Users\User_2\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\obj\Debug\ShoppingCartV2.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\bin\ShoppingCartV2.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\bin\ShoppingCartV2.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\obj\Debug\ShoppingCartV2.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\ShoppingCartV2\ShoppingCartV2\obj\Debug\ShoppingCartV2.pdb

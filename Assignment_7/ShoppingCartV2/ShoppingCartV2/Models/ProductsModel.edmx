@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ShoppingCartDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ShoppingCartDBModelStoreContainer">
+          <EntitySet Name="Products" EntityType="ShoppingCartDBModel.Store.Products" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductType" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ImageFile" Type="nvarchar" MaxLength="30" />
+          <Property Name="UnitPrice" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="MaxAmount" Type="int" Nullable="false" />
+          <Property Name="DefaultAmount" Type="int" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ShoppingCartDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ShoppingCartDBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Products" EntityType="ShoppingCartDBModel.Product" />
+        </EntityContainer>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductType" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="ProductName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImageFile" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="MaxAmount" Type="Int32" Nullable="false" />
+          <Property Name="DefaultAmount" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ShoppingCartDBModelStoreContainer" CdmEntityContainer="ShoppingCartDBEntities1">
+          <EntitySetMapping Name="Products"><EntityTypeMapping TypeName="ShoppingCartDBModel.Product"><MappingFragment StoreEntitySet="Products">
+            <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+            <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+            <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+            <ScalarProperty Name="ImageFile" ColumnName="ImageFile" />
+            <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+            <ScalarProperty Name="MaxAmount" ColumnName="MaxAmount" />
+            <ScalarProperty Name="DefaultAmount" ColumnName="DefaultAmount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ProductsModel">
+        <EntityTypeShape EntityType="ShoppingCartDBModel.Product" Width="1.5" PointX="0.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
