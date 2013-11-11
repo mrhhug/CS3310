@@ -1,0 +1,6 @@
+H:\Link to School\CSCI\CS3310\Assignment_7\ShoppingCartV1\ShoppingCartV1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jim\Desktop\Assignment_7\ShoppingCartV1\ShoppingCartV1\bin\ShoppingCartV1.dll
+C:\Users\jim\Desktop\Assignment_7\ShoppingCartV1\ShoppingCartV1\bin\ShoppingCartV1.pdb
+C:\Users\jim\Desktop\Assignment_7\ShoppingCartV1\ShoppingCartV1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jim\Desktop\Assignment_7\ShoppingCartV1\ShoppingCartV1\obj\Debug\ShoppingCartV1.dll
+C:\Users\jim\Desktop\Assignment_7\ShoppingCartV1\ShoppingCartV1\obj\Debug\ShoppingCartV1.pdb

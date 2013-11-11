@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShoppingCartDBModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ShoppingCartDBModel1StoreContainer">
+    <EntitySet Name="Products" EntityType="ShoppingCartDBModel1.Store.Products" store:Type="Tables" store:Schema="dbo" store:Name="Products">
+      <DefiningQuery>SELECT 
+      [Products].[ProductID] AS [ProductID], 
+      [Products].[ProductType] AS [ProductType], 
+      [Products].[ProductName] AS [ProductName], 
+      [Products].[ImageFile] AS [ImageFile], 
+      [Products].[UnitPrice] AS [UnitPrice], 
+      [Products].[MaxAmount] AS [MaxAmount], 
+      [Products].[DefaultAmount] AS [DefaultAmount]
+      FROM [dbo].[Products] AS [Products]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'C:\USERS\JIM\DESKTOP\ASSIGNMENT_7\SHOPPINGCARTV1\SHOPPINGCARTV1\APP_DATA\SHOPPINGCARTDB.MDF.dbo.Products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="ProductType" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="MaxAmount" />
+      <PropertyRef Name="DefaultAmount" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ProductType" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImageFile" Type="nvarchar" MaxLength="30" />
+    <Property Name="UnitPrice" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="MaxAmount" Type="int" Nullable="false" />
+    <Property Name="DefaultAmount" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>
