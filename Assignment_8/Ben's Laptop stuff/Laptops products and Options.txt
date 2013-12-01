@@ -1,0 +1,16 @@
+
+
+OptionID   OptionType   OptionName  OptionCost
+- w/e        Add-on    Extra Memory    80.00
+-w/e         Add-on     Spare Battery  50.00
+-w/e         coupon      coupon-deal  -45.00
+
+
+
+ProductID  ProductType   ProductName    ImageFile           UnitPrice  MaxAmount DefualtAmount
+w/e         Laptop       13 inch Sony    13inch-Sony.jpg       499.99     -1         0         
+w/e         Laptop       14 inch Asus    14inch-Asus.jpg       579.99     -1         0
+w/e         Laptop       15 inch HP      15inch-HP.jpg         649.99     -1         0
+w/e         Laptop       16 inch Toshiba 16inch-Toshiba.jpg    699.99     -1         0
+w/e         Laptop       17 inch HP      17inch-HP.jpg         799.99      5         0
+
